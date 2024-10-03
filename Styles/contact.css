@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url(/Font/PlayfairDisplay-Regular.ttf);
+}
+
+body {
+    background-color: rgb(38,19,15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Play', sans-serif;
+    font-size: 400%;
+    color: rgb(94,62,23);
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+p {
+    font-family: 'Play', sans-serif;
+    color: rgb(152,105,49);
+    font-size: 120%;
+}
+
+form{
+    text-align: center;
+    background-color: rgb(67, 38, 12);
+    width: 90%;
+    max-width: 500px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 12px;
+}
+
+input[type='email'],
+textarea,
+input[type='text'] {
+    width: 70%;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+    outline: 3px solid rgb(139, 40, 3);
+    border-color: transparent;
+}
+
+button {
+    background-color: rgb(38,19,15);
+    width: 50%;
+    height: 30px;
+    margin: 20px;
+    outline: none;
+    border: none;
+    color: rgb(138, 87, 26);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer {
+    color: white;
+    
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline;
+        padding: 15px;
+    }
+}
