@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url(/Font/PlayfairDisplay-Regular.ttf);
+}
+
+body {
+    background-color: rgb(36, 13, 5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head{
+    font-family: 'Play', sans-serif;
+    font-size: 150%;
+    color: rgb(94,62,23);
+    margin: 100px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Play', sans-serif;
+    font-size: 400%;
+    color: rgb(94,62,23);
+    margin: 1%;
+
+}
+
+.img{
+    max-width: 600px;
+    height: auto;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    color: white;
+    
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline;
+        padding: 15px;
+    }
+}

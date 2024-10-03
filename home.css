@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url(/Font/PlayfairDisplay-Regular.ttf);
+}
+
+body {
+    background-color: rgb(38,19,15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    background-image: url(/Img/home.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+
+    h1 {
+        font-family: 'Play', sans-serif;
+        font-size: 400%;
+        color: rgb(94,62,23);
+        margin: 100px;
+        padding: 20px;
+    }
+    p {
+        font-family: 'Play', sans-serif;
+        color: rgb(152,105,49);
+        font-size: 120%;
+    }
+}
+
+
+.mid{
+    h2 {
+        font-family: 'Play', sans-serif;
+        font-size: 200%;
+        color: rgb(94,62,23);
+        margin: 5px;
+        margin-bottom: 0px;
+        padding: 5px;
+    }
+    p {
+        font-family: 'Play', sans-serif;
+        color: rgb(152,105,49);
+        font-size: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgb(120, 54, 30);
+
+}
+
+.cimg1 {
+    width: 100px;
+    height: 100px;
+}
+
+.cimg2 {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.cimg3 {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+    width: 100px;
+    display: block;
+    margin-bottom: 10px;
+    }
+}
+
+footer {
+    color: white;
+    
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline;
+        padding: 15px;
+    }
+}
